@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { isConnected, getAddress } from '@stellar/freighter-api';
+import SendTransaction from './SendTransaction'
 
 const WalletConnect: React.FC = () => {
     const [walletAddress, setWalletAddress] = useState<string | null>(null);
@@ -41,7 +42,10 @@ const WalletConnect: React.FC = () => {
             <h1>Connect to Freighter Wallet</h1>
             {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
             {walletAddress ? (
-                <p>Connected: {walletAddress}</p>
+                <div>
+                    Connected: {walletAddress}
+                    <SendTransaction />
+                </div>
             ) : (
                 <button onClick={handleConnect}>Connect Wallet</button>
             )}

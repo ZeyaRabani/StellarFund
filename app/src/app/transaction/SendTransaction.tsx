@@ -2,7 +2,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { sendTransaction } from '../utils/sendTransaction';
+import { sendTransaction } from '@/utils/sendTransaction';
 
 const SendTransaction: React.FC = () => {
     const [destination, setDestination] = useState('');

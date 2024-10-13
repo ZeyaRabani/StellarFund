@@ -87,7 +87,7 @@ export default function Page() {
 
     return (
         <MaxWidthWrapper>
-            <div className='flex items-center justify-center py-6'>
+            <div className='flex items-center justify-center pb-6 pt-16'>
                 <div className="w-full mt-20 mr-0 mb-0 ml-0 relative z-10 max-w-2xl lg:mt-0 lg:w-5/12">
                     <div className="flex flex-col items-start justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl
             relative z-10">

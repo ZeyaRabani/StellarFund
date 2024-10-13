@@ -1,0 +1,7 @@
+[package]
+name = "stellar-smart-contract"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+soroban-sdk = "0.7.1"
